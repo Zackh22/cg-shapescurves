@@ -199,19 +199,6 @@ class Renderer {
             this.showDataPoints({x: pt2.x, y: pt2.y}, [0, 0, 255, 255], ctx);
             this.showDataPoints({x: pt3.x, y: pt3.y}, [0, 0, 255, 255], ctx);
         }
-        /*
-        if(t < 1.01){
-            let new_x = Math.pow(1-t, 3) * x0 + 3 * Math.pow(1-t, 2) * t * x1 + 3 * (1-t) * Math.pow(t, 2) * x2 + Math.pow(t, 3) * x3;
-            let new_y = Math.pow(1-t, 3) * y0 + 3 * Math.pow(1-t, 2) * t * y1 + 3 * (1-t) * Math.pow(t, 2) * y2 + Math.pow(t, 3) * y3;
-            this.drawLine({x: prev_x, y: prev_y}, {x: new_x, y: new_y}, color, ctx);
-            if(this.showPoints){
-                this.showDataPoints({x: new_x, y: new_y}, [255, 0, 0, 255], ctx);
-            }
-            prev_x = new_x;
-            prev_y = new_y;
-        }
-        */
-
 
     }
 
